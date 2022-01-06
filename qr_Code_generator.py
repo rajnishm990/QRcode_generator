@@ -13,7 +13,10 @@ def generateR():
     qr.add_data(data)
     qr.make(fit =True)
     img = qr.make_image(fill="black" ,back_color ="white")
+    Label(app, text='QR code has been generated !', bg='black',fg='white',font=('Helvetica 12 italic')).place(rely=0.6,relx=0.3)
     img.save("Generated_Image.png")
+
+
     
 
 
@@ -38,7 +41,7 @@ l1.place(relx=0.5,rely=0.4,anchor="n")
 userValue = StringVar()
 inputtxt = Entry(app,textvariable =userValue,bg ='white' , width =80,relief =SUNKEN)
 inputtxt.place(relx=0.5,rely=0.5,anchor ='n')
-submitButton = Button(app, text ="CONVERT", activebackground ='blue',font = ('Helvetica 10 bold'),command =generateR )
+submitButton = Button(app, text ="CONVERT", activebackground ='#ADD8E6',font = ('Helvetica 10 bold'),command =generateR )
 submitButton.place(relx = 0.5,rely=0.55,anchor ='n')
 
 
