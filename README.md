@@ -1,5 +1,5 @@
 # QRcode_generator
-Made using Tkinter and it converts a text or a link to a QR code and saves the QR code (image) in the same directory as this program. 
+A simple GUI application made using Tkinter and it converts a text or a link to a QR code and saves the QR code (image) in the same directory as this program. 
 
 
 Requirements -
